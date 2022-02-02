@@ -14,6 +14,8 @@ import { DialogAddPlayerComponent } from './dialog-add-player/dialog-add-player.
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +26,14 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
     AppRoutingModule,
     MatButtonModule,
     MatIconModule,
+    MatFormFieldModule,
     MatDialogModule,
-    BrowserAnimationsModule,
-    FormsModule,
+   
  
   ],
   providers: [],
