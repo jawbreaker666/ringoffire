@@ -34,6 +34,9 @@ export class GameComponent implements OnInit {
    console.log('New card:' + this.currentCard);
    console.log('Game is', this.game);
 
+   //Reihenfolge der Spieler
+   this.game.currentPlayer++;
+   this.game.currentPlayer = this.game.currentPlayer % this.game.players.length; // :3 = 0 oder :4 = 1
 
 
    setTimeout(()=>{
@@ -48,8 +51,10 @@ export class GameComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogAddPlayerComponent);
   
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+    dialogRef.afterClosed().subscribe((name: string) => { 
+      if(name && name.length > 0){ //string=Text
+     this.game.players.push(name);
+    }
     
     });
   }
