@@ -10,21 +10,24 @@
     img{
         height: 100vh;
         object-fit: cover;
+        max-width: 100%;
     }
 }
 
 .start-label-box{
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    display: flex;
-    justify-content: center;
+    margin-left: 0px;
+    margin-top: 10px;
+    top: 200px;
+   
+   
+  
 
     img{
-        width: 40vw;
+        width: 30vw;
         height: auto;
         object-fit: cover;
+        margin-right: 300px;
 
         &:hover{
             filter: brightness(1.5);
@@ -32,4 +35,27 @@
         }
 
     }
+}
+
+@media(max-width: 1000px) {
+    .start-screen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+
+
+        img{
+            
+        width: 100vw;
+        height: 0;
+        }
+
+      
+    }
+
+    .start-label-box{
+        margin-bottom: 100px;
+    }
+
 }
