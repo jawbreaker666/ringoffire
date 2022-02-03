@@ -17,6 +17,15 @@
     }
 }
 
+.top-card{
+    cursor: pointer;
+    transition: 125ms ease-in-out;
+
+    &:hover{
+        transform: scale(1.1) translate(-10px);
+    }
+}
+
 .played-card{
     right: 25px;
     transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-10deg);
