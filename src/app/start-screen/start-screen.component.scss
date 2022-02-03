@@ -8,7 +8,7 @@
     align-items: center;
 
     img{
-        height: 100vh;
+        
         object-fit: cover;
         max-width: 100%;
     }
@@ -16,15 +16,17 @@
 
 .start-label-box{
     position: absolute;
-    margin-left: 0px;
-    margin-top: 10px;
+    
     top: 200px;
+    margin-bottom: 100px;
+
+    
    
    
   
 
     img{
-        width: 30vw;
+       
         height: auto;
         object-fit: cover;
         margin-right: 300px;
@@ -47,8 +49,8 @@
 
         img{
             
-        width: 100vw;
-        height: 0;
+        
+      
         }
 
       
@@ -56,6 +58,8 @@
 
     .start-label-box{
         margin-bottom: 100px;
+        bottom: 250px;
+        margin-left: 0px;
     }
 
 }
