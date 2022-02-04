@@ -16,16 +16,11 @@
 
 .start-label-box{
     position: absolute;
-    
     top: 200px;
     margin-bottom: 100px;
 
     
-   
-   
-  
-
-    img{
+        img{
        
         height: auto;
         object-fit: cover;
@@ -39,22 +34,12 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 960px) {
     .start-screen{
         display: flex;
         justify-content: center;
         align-items: center;
      
-
-
-        img{
-            
-        
-      
-        }
-
-      
-    }
 
     .start-label-box{
         margin-bottom: 100px;
@@ -66,4 +51,5 @@
         margin-right: 0;
     }
 
+    }
 }
