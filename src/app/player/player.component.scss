@@ -30,3 +30,15 @@
 .player-active{
     background-color: rgb(255, 153, 0) !important ;
 }
+
+@media(max-width: 1000px) {
+
+    .player{
+        width: 200px;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      
+    }
+}
